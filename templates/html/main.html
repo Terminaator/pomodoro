@@ -1,0 +1,74 @@
+<!doctype html>
+<html id="window">
+  <head>
+    <title>Pomodoro</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="../../static/main.js"></script>
+</head>
+  <body>
+    <div class="title">
+        <h1 class="title">Pomodoro settings</h1>
+        <label class="switch">
+            <input type="checkbox" id="start">
+            <span class="slider round"></span>
+        </label>
+        <h4 id="error" style="color: red;">error</h4>
+        <hr/>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>
+                    work - <span id="workTime">0</div>
+                </th>
+                <th>
+                    short break - <span id="shortBreakTime">0</div>
+                </th>
+                <th>
+                    long break - <span id="longBreakTime">0</div>
+                </th>
+                <th>
+                    description - <span id="desc"></div>
+                </th>
+            </tr>
+        </table>
+        <hr/>
+    </div>
+    <div class="table" id="change">
+        <table>
+            <tr>
+                <td>
+                    <label>work</label>
+                </td>
+                <td>
+                    <input type="number" value="" id="work"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>short break</label>
+                </td>
+                <td>
+                    <input id="shortBreak" type="number" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>long break</label>
+                </td>
+                <td>
+                    <input id="longBreak" type="number" value=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>description</label>
+                </td>
+                <td>
+                    <input id="text" type="text" value=""/>
+                </td>
+            </tr>
+        </table>
+    </div>
+  </body>
+</html>

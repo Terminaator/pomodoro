@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Pomodoro",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_popup": "./templates/html/main.html"
+  },
+  "permissions": [
+    "tabs",
+    "https://www.toggl.com/*"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "background":{
+    "scripts": ["./static/background/background.js"]
+  }
+}
